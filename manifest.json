@@ -1,0 +1,24 @@
+{   
+    "name": "Ajudante Ahgora",
+    "description": "Auxilia os gestores do ponto injetando artigos e ferramentas dentro do PontoWeb.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": { 
+        "32": "icons/ahgora-logo-32.png",
+        "64": "icons/ahgora-logo-64.png",
+       "128": "icons/ahgora-logo-128.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "tabs",
+        "https://www.ahgora.com.br/*",
+        "storage"
+    ],
+    "browser_action": {
+        "default_title": "Ahgora Helper",
+        "default_popup": "popup.html"
+    }
+}
