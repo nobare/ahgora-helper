@@ -14,14 +14,13 @@ const injectIt = (value) => {
         <table class="tab_dados table table-striped table-bordered" id="funcionarios ">
         <tbody>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/70422/ponto-web-como-importar-banco-de-horas-manual?ticketId=&q=" 
-            target="_blank">Como importar banco de horas manual</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/126423/pontoweb-como-baixar-multiplos-afd-s?ticketId=&q=" target="_blank">Como baixar múltiplos AFD's</a></th>
             </tr>
         </tbody>
         </table>
         </div>`
 
-        document.getElementsByTagName('h2')[0].outerHTML += injection;
+        document.getElementsByTagName('h3')[0].outerHTML += injection;
 
     } else {
         console.log('its off');

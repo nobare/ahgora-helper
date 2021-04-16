@@ -14,13 +14,16 @@ const injectIt = (value) => {
         <table class="tab_dados table table-striped table-bordered" id="funcionarios ">
         <tbody>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/70422/ponto-web-como-importar-banco-de-horas-manual?ticketId=&q=" 
-            target="_blank">Como importar banco de horas manual</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/53127/pontoweb-como-gerar-relatorio-de-justificativas?ticketId=&q=" 
+            target="_blank">Como gerar relatório de justificativas</a></th>
+            </tr>
+            <tr>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/103095/pontoweb-como-acompanhar-as-justificativas-com-filtro-de-localiz?ticketId=&q=" 
+            target="_blank">Como acompanhar as justificativas com filtro de localização?</a></th>
             </tr>
         </tbody>
         </table>
         </div>`
-
         document.getElementsByTagName('h2')[0].outerHTML += injection;
 
     } else {

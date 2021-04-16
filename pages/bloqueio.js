@@ -17,10 +17,10 @@ const injectIt = (value) => {
             <th><a href="https://seusucesso.ahgora.com.br/kb/article/69679/bloqueio-de-alteracoes-e-por-competencia?ticketId=&q=" target="_blank">Diferenças entre bloqueio de alterações e bloqueio por competência</a></th>
             </tr>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/108841/pontoweb-bloqueio-automatico-de-competencia?ticketId=&q=" target="_blank">Bloqueio Automático de Competência</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/108841/pontoweb-bloqueio-automatico-de-competencia?ticketId=&q=" target="_blank">O que é Bloqueio Automático de Competência</a></th>
             </tr>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/27041/como-bloquear-o-periodo-de-apuracao-ja-processado?ticketId=&q=" target="_blank">Como bloquear o período de apuração já processado?</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/176079/pontoweb-como-utilizar-a-ferramenta-de-bloqueio-de-competencia?preview=true&revisionId=571093" target="_blank">Como utilizar a ferramenta de bloqueio de competência</a></th>
             </tr>
         </tbody>
         </table>

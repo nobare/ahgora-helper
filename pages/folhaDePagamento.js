@@ -12,18 +12,20 @@ const injectIt = (value) => {
     if (value == true) {
         let injection = `<div id="ext-div" style="padding: 1.5em";>
         <table class="tab_dados table table-striped table-bordered" id="funcionarios ">
+        <thead>
+        <tr>
+        <th>Dúvidas para fazer uma exportação/importação?</th>
+        </tr>
+        </thead>
         <tbody>
             <tr>
             <th><a href="https://seusucesso.ahgora.com.br/kb/article/68858/implantacao-tutorial-de-fechamento-do-mes-contabil-do-plano-gere?ticketId=&q=" target="_blank">Tutorial completo para fechamento de folha de pagamento</a></th>
             </tr>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/98266/pontoweb-onde-configurar-codigos-contabeis-para?ticketId=&q=" target="_blank">Como configurar códigos contábeis para integração com a folha de pagamento</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/44242/pontoweb-como-criar-e-importar-uma-planilha-de-funcionarios" target="_blank">Como criar e importar uma planilha de funcionários</a></th>
             </tr>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/28106/como-as-informacoes-de-ponto-podem-ser-enviadas-ao-software-de-f?ticketId=&q=" target="_blank">Como as informações de ponto podem ser enviadas ao software de Folha de Pagamento?</a></th>
-            </tr>
-            <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/141489/pontoweb-como-tirar-relatorio-de-horas-adicionais-atraves-de-fol?ticketId=&q=" target="_blank">Como tirar relatório de horas adicionais através de folha de pagamento</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/137354/copia-de-pontoweb-como-importar-banco-de-horas-manual?ticketId=&q=" target="_blank">Como importar banco de horas manual</a></th>
             </tr>
         </tbody>
         </table>

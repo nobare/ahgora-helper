@@ -19,7 +19,7 @@ const injectIt = (value) => {
         </thead>
         <tbody>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/84006/criar-um-dispositivo-para-batida-online-mobile?ticketId=&q=" target="_blank">Como criar um dispositivo para batida online/mobile?o</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/84006/criar-um-dispositivo-para-batida-online-mobile?ticketId=&q=" target="_blank">Como criar um dispositivo para batida online/mobile?</a></th>
             </tr>
             <tr>
             <th><a href="https://seusucesso.ahgora.com.br/kb/article/84068/batida-online-como-bater-o-ponto-pelo-navegador-de-internet?ticketId=&q=" target="_blank">Como registrar a batida online pelo navegador?</a></th>
@@ -33,7 +33,7 @@ const injectIt = (value) => {
             </tr>
         </thead>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/25950/como-instalar-ativar-e-realizar-o-primeiro-registro-de-ponto-com?ticketId=&q=" target="_blank">Como habilitar e instalar o aplicativo Ahgora Multi</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/84876/ahgora-multi-como-comecar-a-utilizar-esta-ferramenta?ticketId=&q=" target="_blank">Primeiros passos para implantar o aplicativo</a></th>
             </tr>
             <tr>
             <th><a href="https://seusucesso.ahgora.com.br/kb/article/142278/ahgora-multi-como-inserir-mais-de-um-colaborador-em-dispositivo-?ticketId=&q=" target="_blank">Como inserir mais de um colaborador em dispositivo Multi e cadastrar face</a></th>

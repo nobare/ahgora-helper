@@ -31,7 +31,7 @@ const injectIt = (value) => {
             <th><a href="https://seusucesso.ahgora.com.br/kb/article/54298/adicionar-mais-motivo-na-solicitacao-do-portal-do-colaborador?ticketId=&q=" target="_blank">Como permitir justificativas pelo MyAhgora em um motivo de afastamento</a></th>
             </tr>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/pt-br/Search?q=afastamento" target="_blank">Não encontrou a sua dúvida? Verifique todos os artigos relacionados a página Afastamentos/Feriados</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/pt-br/Search?q=afastamento" target="_blank">Não encontrou a sua dúvida? Verifique todos os artigos relacionados a página Afastamentos</a></th>
             </tr>
         </tbody>
         </table>

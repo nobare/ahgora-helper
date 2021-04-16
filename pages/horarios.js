@@ -14,7 +14,7 @@ const injectIt = (value) => {
         <table class="tab_dados table table-striped table-bordered" id="funcionarios ">
         <thead>
             <tr>
-            <th>Tutoriais de como ajustar as jordas e escalas. Mostrando o passo a passso de vários procedimentos dessa página.</th>
+            <th>Tutoriais de como ajustar as jornadas e escalas. Mostrando o passo a passo de vários procedimentos desta página.</th>
             </tr>
         </thead>
         <tbody>

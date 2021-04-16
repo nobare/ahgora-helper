@@ -14,8 +14,8 @@ const injectIt = (value) => {
         <table class="tab_dados table table-striped table-bordered" id="funcionarios ">
         <tbody>
             <tr>
-            <th><a href="https://seusucesso.ahgora.com.br/kb/article/70422/ponto-web-como-importar-banco-de-horas-manual?ticketId=&q=" 
-            target="_blank">Como importar banco de horas manual</a></th>
+            <th><a href="https://seusucesso.ahgora.com.br/kb/article/159464/copia-de-como-gerar-espelho-estendido-e-documentos-fiscais?ticketId=&q=" 
+            target="_blank">Como gerar o espelho estendido em massa e demais documentos fiscais</a></th>
             </tr>
         </tbody>
         </table>

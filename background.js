@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         alert('A mudança fará efeito após você atualizar a página.');
 
     } else if (request.change === 'state false') {
-        chrome.tabs.executeScript(tabId, {file: 'pages/remover.js'}, () => {
+        chrome.tabs.executeScript(null, {file: 'pages/remover.js'}, () => {
             console.log('injection removed');
         })
     }
@@ -68,13 +68,25 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     };
 });
 
-// Configurações
+// Folha de pagamento
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/configuracoes' === tab.url) {
-        chrome.tabs.executeScript(tabId, {file: 'pages/configuracoes.js'}, () => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && tab.url.includes('https://www.ahgora.com.br/exporta')) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/folhaDePagamento.js'}, () => {
             chrome.storage.local.get('state', value => {
                 chrome.tabs.sendMessage(tabId, value)
-                console.log(tabId, tab.url, value);
+                console.log(tabId, tab.url, value); 
+            });
+        });
+    };
+});
+
+// AFD dos dispositivos
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && tab.url.includes('https://www.ahgora.com.br/afds/gerar_afds')) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/afds.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value); 
             });
         });
     };
@@ -82,8 +94,8 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 
 // Gerar Documentos
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/exporta?export=folha_pagamento' === tab.url) {
-        chrome.tabs.executeScript(tabId, {file: 'pages/folhaDePagamento.js'}, () => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/documentos' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/documentos.js'}, () => {
             chrome.storage.local.get('state', value => {
                 chrome.tabs.sendMessage(tabId, value)
                 console.log(tabId, tab.url, value);
@@ -96,6 +108,54 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/funcionarios' === tab.url) {
         chrome.tabs.executeScript(tabId, {file: 'pages/funcionario.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value);
+            });
+        });
+    };
+});
+
+// Feriados
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/feriados' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/feriados.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value);
+            });
+        });
+    };
+});
+
+// Gerenciador de Espelhos
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/gerenciador_espelhos' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/gerenciadorEspelhos.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value);
+            });
+        });
+    };
+});
+
+// Justificativas
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/justificativa' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/justificativas.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value);
+            });
+        });
+    };
+});
+
+// Mapa de batidas area de atuacao
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/cercas' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/areaAtuacao.js'}, () => {
             chrome.storage.local.get('state', value => {
                 chrome.tabs.sendMessage(tabId, value)
                 console.log(tabId, tab.url, value);
@@ -133,6 +193,54 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/relatorios' === tab.url) {
         chrome.tabs.executeScript(tabId, {file: 'pages/relatorios.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value);
+            });
+        });
+    };
+});
+
+// Comunicados
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/notificationPolicy' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/comunicados.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value);
+            });
+        });
+    };
+});
+
+// Relatorio batidas impares
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/relatorios/batidas_impares' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/relatorioBatidasImpar.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value);
+            });
+        });
+    };
+});
+
+// Relatorio batidas por periodo
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/relatorios/batidas_periodo' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/relatorioBatidasPeriodo.js'}, () => {
+            chrome.storage.local.get('state', value => {
+                chrome.tabs.sendMessage(tabId, value)
+                console.log(tabId, tab.url, value);
+            });
+        });
+    };
+});
+
+// Relatorio sumarizado diario por funcionario
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status == 'complete' && tab.status == 'complete' && tab.url != undefined && 'https://www.ahgora.com.br/relatorios/completo/irr' === tab.url) {
+        chrome.tabs.executeScript(tabId, {file: 'pages/relatorioSumarizadoDiario.js'}, () => {
             chrome.storage.local.get('state', value => {
                 chrome.tabs.sendMessage(tabId, value)
                 console.log(tabId, tab.url, value);
