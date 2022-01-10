@@ -13,7 +13,7 @@
     },
     "permissions": [
         "tabs",
-        "https://www.ahgora.com.br/*",
+        "https://*/ahgora.com.br/*",
         "storage"
     ],
     "browser_action": {
